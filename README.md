@@ -4,6 +4,8 @@
 
 * Database table name: `todoApp`
 
+* createTodoApp.sh
+
 ```
 DROP TABLE todoApp;
     CREATE TABLE todoApp(
@@ -15,5 +17,9 @@ DROP TABLE todoApp;
 INSERT INTO todoApp(key_item, todo_item) VALUES('key2', 'Buy milk today 2');
 ```
 
+* Shell command to create table in `sqlite3`
 
+```
+sqlite3 test_sqlite3.db < createTodoApp.sh
+```
 
